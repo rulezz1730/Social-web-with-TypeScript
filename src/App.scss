@@ -1,0 +1,38 @@
+.App {
+
+}
+
+.app-wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    grid-template-areas:
+            "head head"
+            "nav cont"
+;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+}
+
+.header{
+    grid-area: head;
+    background: cadetblue;
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
+.nav{
+    grid-area: nav;
+    background: cornflowerblue;
+}
+.content{
+    grid-area: cont;
+    background: coral;
+
+    img{
+        width: 100%;
+    }
+}
+
+
